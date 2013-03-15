@@ -427,7 +427,7 @@ The Guide: REALITY IS WEIRD, MAGEIA. FAREWELL FOR NOW.
 
 [ Selina is walking towards a bench in a park, holding several newspapers, and
 a pair of scissors. She sits on the bench and start preparing some
-papercuttings.
+paper-cuttings.
 
 Fron, a demon with four long stick legs and a short neck steps into the frame.
 <img src="images/fron-demon-illustration-small-indexed.png" alt="Illustration of Fron" title="Fron the Demon" />
@@ -505,7 +505,7 @@ Selina: time out, time out [does a T with her hands.]
 
 Selina: Wow, I am being killed her.
 
-Jonathan: Crused here!
+Jonathan: Crushed here!
 
 Selina: Yeah, completely squashed here.
 
@@ -970,7 +970,7 @@ Selina: No, don't do that.
 
 Selina is shocked, and eventually finds a way to turn off the music.]
 
-Selina: Oh, Geeze. This cannot be happening.
+Selina: Oh, Jeeze. This cannot be happening.
 
 +++: And how am I going to clear all this dust? If they find the hall in
 such a mess, then I'm going to be dead.
@@ -1751,7 +1751,7 @@ service.
 <s id="getting-help-with-cuneiform" title="Selina Gets Help with her Cuneiform Homework">
 
 Selina: Anyway, even if I am a vampirella, or a heroine or a Q or whatever, I
-still have my responsibilities as a student of Near East archaelogy. And that
+still have my responsibilities as a student of Near East archaeology. And that
 means - cuneiform!
 
 Aharon: Ah, cuneiform. That brings back memories.
@@ -1782,7 +1782,7 @@ directions, incorporated many foreign words, and developed dialects,
 sub-dialects and personal idioms, very similar to what is happening with
 English today.
 
-Mosheh: Yes, the age when Aramaic became the Lingua Franca was wonderful. So
+Mosheh: Yes, the age when Aramaic became the Lingua franca was wonderful. So
 although Aharon and I had to learn Cuneiform, we now realise how much we
 detested it.
 
