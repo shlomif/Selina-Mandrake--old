@@ -632,21 +632,21 @@ Jessica on the phone: [Laughing] I guess I’ll never understand.
 
 <s id="selinas-18s-birthday-party" title="Selina’s 18th Birthday Party">
 
-[Selina is standing near a cake with 18 lit candles, and the number 18 on
-it, surrounded by many of her friends.]
+[Selina is standing near a cake decorated with the number 18 in the centre and
+18 lit candles around the edge. Many of her friends gleefully standby.]
 
 The crowd: Happy birthday, Selina!
 
-[ Selina blows the candles in a few tries. ]
+[ After a few tries Selina manages to blow out all the candles. ]
 
-The crowd: Many returns of the day. [Selina is smiling, says “Thank you”
+The crowd: May your wish come true! [Selina is smiling, says “Thank you”
 and walks away.]
 
 [Matthew approaches Selina]
 
 Matthew: Birthday kiss? [Selina smiles and they kiss.]
 
-Selina: Well, I'm gonna go to the kitchen for a while — feel free to cut
+Selina: Well, I'm gonna go grab something from the kitchen — feel free to cut
 the cake.
 
 [Selina walks away.]
@@ -655,7 +655,7 @@ the cake.
 
 [Selina goes to the kitchen smiling, opens the refrigerator’s door and takes
 out some refreshments and arranges them on the table and then she opens
-a cupboard’s door only to discover a small human like demon inside.]
+a cupboard’s door only to discover a small human-like demon inside.]
 
 Selina: Why, hello there! I guess you did not RSVP.
 
@@ -663,15 +663,15 @@ Mephiqoleth: MAGEIA!
 
 Selina: Judging by the recent happenings, I guess that’s me.
 
-+++: So what should I write on your name tag?
++++: So what shall I write on your name tag?
 
 Mephiqoleth: MY NAME IS MEPHIQOLETH.
 
-Selina: Oh. Is it Emm, Ee, Pee…
+Selina: Ah, hah. [Trying to write on the name tag.] Emm, Ee, Pee…
 
-Mephiqoleth: It is written in Leshon Haqodesh.
+Mephiqoleth: IT IS WRITTEN IN LESHON HAQODESH.
 
-Selina: “Leshon Haqodesh”? The holy tongue? You mean:
+Selina: “Leshon Haqodesh”? The holy tongue? Do you mean…
 
 Mephiqoleth: YES!!!… HEBREW! [Non-dramatically] I am Jewish.
 
@@ -687,7 +687,7 @@ so she can mother cute little Jewish kittens.
 Selina: You are not amused, demons are never amused. I should have learned
 that by now.
 
-+++: Anyway, what is it you want from me?
++++: In any case, what is it you want from me?
 
 Mephiqoleth: MAGEIA, YOU ARE NOW EIGHT AND TEN YEARS OLD - YOU ARE NOW A
 WOMAN.
@@ -703,12 +703,13 @@ Selina: They are. I believe you.
 Mephiqoleth: NOT SO QUICKLY. MY GREATEST MYSTICAL POWER, WHICH FEW OTHER DEMONS
 POSSESS, IS MY TELEPORTATION ABILITY. I CAN TELEPORT YOU ANYWHERE.
 
-Selina: You can? Like where?
+Selina: Really? Like where?
 
 Mephiqoleth: ANYWHERE YOU WANT!
 
-Selina: OK… well, I’m feeling adventurous, so I want the crème-de-la-crème,
-the cat’s whiskers, the face that launched a thousand ships…
+Selina: OK… well, I’m feeling adventurous. Therefore… give me the
+crème-de-la-crème, the cat’s whiskers, the face that
+launched a thousand ships…
 
 Mephiqoleth: YOU DO NOT MEAN… <b>THE AMBER!</b>.
 
@@ -728,7 +729,7 @@ Selina: Just one thing, can you please wait with teleporting me to
 <b>the Amber</b> until Spring break, so I can get ready and try to safely
 return back home?
 
-Mephiqoleth: OF COURSE! I AM TIMELESS. FAREWELL, MAGEIA, I SHALL MEET YOU
+Mephiqoleth: OF COURSE: FOR I AM TIMELESS. FAREWELL, MAGEIA, I SHALL MEET YOU
 AGAIN DURING THIS SO-CALLED ”SPRING BREAK“ WHEN YOU ARE MORE PREPARED. UNTIL
 THEN, MAY YOU BE WELL.
 
@@ -738,7 +739,7 @@ Selina: Well, I suppose a one way trip to the Amber is also a fine Birthday
 present. [She smiles]
 
 Jessica’s voice from the main hall: Selina, is everything OK, why aren't you
-coming back? Don't you want some cake.
+coming back? Don't you want some cake?
 
 Selina: Yes, sorry, I'm coming, I'm coming. [She takes the tray and leaves
 the frame]
