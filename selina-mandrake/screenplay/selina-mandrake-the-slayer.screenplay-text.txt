@@ -1,4 +1,6 @@
-<s id="towtf1" title="Selina Mandrake - *The* Slayer">
+<s id="selina-mandrake--the-slayer" title="Selina Mandrake - *The* Slayer">
+
+<s id="about-this-screenplay" title="About this screenplay">
 
 [Catch phrase: “Caught between post-Modernism and the New Age”]
 
@@ -14,6 +16,8 @@ well as other sources.
 a dramatic and phony tone it is placed in “ALL CAPS” (inspired by the talk
 of Death in the Discworld series). When they talk non-dramatically and honestly,
 it is placed in proper capitalisation.]
+
+</s>
 
 <s id="selina-in-history-class" title="Selina in History Class">
 
