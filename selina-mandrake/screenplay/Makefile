@@ -88,3 +88,9 @@ clean:
 
 linview: $(DOCS_SCREENPLAY_XHTML_AS_HTML)
 	xdg-open $<
+
+test: all
+	prove tests/*.t
+
+runtest: all
+	runprove tests/*.t
