@@ -7,6 +7,8 @@ use IO::All;
 
 use XML::LibXML;
 use XML::LibXML::XPathContext;
+
+use CGI qw(escapeHTML);
 use JSON qw(encode_json);
 
 use Getopt::Long qw(GetOptions);
@@ -73,6 +75,12 @@ my $root_node = $xml->parse_file($filename);
             my $scene_xpc = _get_xpc($scene);
 
             my $title = $scene_xpc->findnodes('descendant::xhtml:h1')->[0]->textContent();
+            my $esc_title = escapeHTML($title);
+
+            my $scene_string = $scene->toString();
+            my $xmlns = q# xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"#;
+            $scene_string =~ s{(<\w+)\Q$xmlns\E( )}{$1$2}g;
+
             io->file($target_dir . "/scene-" . sprintf("%.4d", ($idx+1)) . ".xhtml")->utf8->print(<<"EOF");
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE
@@ -80,11 +88,11 @@ my $root_node = $xml->parse_file($filename);
     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US">
 <head>
-<title>$title</title>
+<title>$esc_title</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-@{[$scene->toString()]}
+$scene_string
 </body>
 </html>
 EOF
@@ -151,7 +159,7 @@ io->file($target_dir . '/' . $json_filename)->utf8->print(
             ],
             toc  => {
                 "depth" => 2,
-                "parse" => [ ],
+                "parse" => [ "text", ],
                 "generate" => {
                     "title" => "Index"
                 },
