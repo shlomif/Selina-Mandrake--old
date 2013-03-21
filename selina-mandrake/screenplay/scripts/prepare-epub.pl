@@ -48,8 +48,10 @@ my $root_node = $xml->parse_file($filename);
     {
         my ($orig_scene) = @_;
 
-        print "\n\n[$idx]<<<<< " . $orig_scene->toString() . ">>>>\n\n";
-        print "Foo ==" , (scalar($orig_scene->toString()) =~ /h3/g), "\n";
+        # Commented out traces. No longer needed.
+        # print "\n\n[$idx]<<<<< " . $orig_scene->toString() . ">>>>\n\n";
+        # print "Foo ==" , (scalar($orig_scene->toString()) =~ /h3/g), "\n";
+
         my $scene = $orig_scene->cloneNode(1);
 
         {
