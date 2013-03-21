@@ -24,6 +24,8 @@ DOCBOOK5_XSL_CUSTOM_FO_XSLT_STYLESHEET := $(HOMEPAGE)/lib/sgml/shlomif-docbook/x
 
 SELINA_UPLOAD_TEMP_DEST = temp-selina-mandrake-P9n7ybv3wq2t
 
+ENG_EPUB = selina-mandrake.epub
+
 all: $(DOCS_SCREENPLAY_XHTML) $(ENG_EPUB) $(ENG_XHTML) $(ENG_HTML_FOR_OOO)
 
 all: epub
@@ -80,7 +82,7 @@ openoffice: oohtml
 epub: $(ENG_EPUB)
 
 $(ENG_EPUB): $(DOCS_SCREENPLAY_XHTML)
-	perl scripts/prepare-epub.pl
+	perl scripts/prepare-epub.pl $(DOCS_SCREENPLAY_XHTML)
 
 epub_ff: epub
 	firefox $(ENG_EPUB)
