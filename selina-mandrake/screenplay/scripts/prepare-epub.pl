@@ -47,19 +47,26 @@ my $root_node = $xml->parse_file($filename);
 
         my $scene = $orig_scene->cloneNode(1);
 
-        my $scene_xpc = _get_xpc($scene);
-        foreach my $h_idx (2 .. 6)
         {
-            foreach my $h_tag ($scene_xpc->findnodes(qq{//xhtml:h$h_idx}))
+            my $scene_xpc = _get_xpc($scene);
+            foreach my $h_idx (2 .. 6)
             {
-                my $replacement = $h_tag->cloneNode(1);
-                $replacement->set
-                $h_tag->replaceNode($replacement);
+                foreach my $h_tag ($scene_xpc->findnodes(qq{xhtml:h$h_idx}))
+                {
+                    my $copy = $h_tag->cloneNode(1);
+                    $copy->setNodeName('h' . ($h_idx-1));
+
+                    my $parent = $h_tag->parentNode;
+                    $parent->replaceChild($copy, $h_tag);
+                }
             }
         }
 
-        my $title = $scene_xpc->findnodes('xhtml:h1')->[0]->textContent();
-        io->file("./for-epub-xhtmls/scene-" . ($idx+1) . ".xhtml")->utf8->print(<<"EOF");
+        {
+            my $scene_xpc = _get_xpc($scene);
+
+            my $title = $scene_xpc->findnodes('xhtml:h1')->[0]->textContent();
+            io->file("./for-epub-xhtmls/scene-" . ($idx+1) . ".xhtml")->utf8->print(<<"EOF");
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE
     html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
@@ -74,6 +81,7 @@ my $root_node = $xml->parse_file($filename);
 </body>
 </html>
 EOF
+        }
         $idx++;
     });
 }
