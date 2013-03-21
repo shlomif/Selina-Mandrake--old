@@ -90,10 +90,22 @@ EOF
 }
 
 my $gfx = 'Green-d10-dice.png';
-
+my $fron = 'fron-demon-illustration-small-indexed.png';
 io->file('../graphics/' . $gfx) > io->file($target_dir . "/images/$gfx");
+io->file('../graphics/fron/' . $fron) > io->file($target_dir . "/images/$fron");
+io->file( "$target_dir/style.css" )->utf8->print(<<'EOF');
+body
+{
+    direction: ltr;
+    text-align: left;
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+}
+EOF
 
-io->file($target_dir . "/selina-mandrake.json")->utf8->print(
+my $json_filename = 'selina-mandrake.json';
+io->file($target_dir . '/' . $json_filename)->utf8->print(
     encode_json(
         {
             filename => 'selina-mandrake',
@@ -105,6 +117,13 @@ io->file($target_dir . "/selina-mandrake.json")->utf8->print(
                     sort => "Fish, Shlomi",
                 },
             ],
+            contributors =>
+            [
+                {
+                    name => "Shlomi Fish",
+                    role => "oth",
+                },
+            ],
             cover => "images/$gfx",
             rights => "Creative Commons Attribution ShareAlike Unported (CC-by-3.0)",
             publisher => 'http://www.shlomifish.org/',
@@ -114,7 +133,49 @@ io->file($target_dir . "/selina-mandrake.json")->utf8->print(
             {
                 scheme => 'URL',
                 value => 'http://www.shlomifish.org/humour/Selina-Mandrake/',
-            }
-        }
-    )
+            },
+            contents =>
+            [
+                {
+                    "type" => "toc",
+                    "source" => "toc.html"
+                },
+                {
+                    type => 'text',
+                    source => "scene-*.xhtml",
+                },
+            ],
+            toc  => {
+                "depth" => 2,
+                "parse" => [ ],
+                "generate" => {
+                    "title" => "Index"
+                },
+            },
+            guide => [
+                {
+                    type => "toc",
+                    title => "Index",
+                    href => "toc.html",
+                },
+            ],
+        },
+    ),
 );
+
+my $orig_dir = io->curdir->absolute . '';
+
+my $epub_fn = 'selina-mandrake.epub';
+
+{
+    chdir ($target_dir);
+
+    my @cmd = ("ebookmaker", "-f", "epub", "-o", $epub_fn, $json_filename);
+    print join(' ', @cmd), "\n";
+    system (@cmd)
+        and die "cannot run ebookmaker - $!";
+
+    chdir ($orig_dir);
+}
+
+io->file("$target_dir/$epub_fn") > io->file("$orig_dir/$epub_fn");
