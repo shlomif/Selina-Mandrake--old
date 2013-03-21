@@ -7,6 +7,7 @@ use IO::All;
 
 use XML::LibXML;
 use XML::LibXML::XPathContext;
+use JSON qw(encode_json);
 
 use Getopt::Long qw(GetOptions);
 
@@ -30,6 +31,8 @@ GetOptions(
 # Input the filename
 my $filename = shift(@ARGV)
     or die "Give me a filename as a command argument: myscript FILENAME";
+
+my $target_dir = './for-epub-xhtmls/';
 
 # Prepare the objects.
 my $xml = XML::LibXML->new;
@@ -66,7 +69,7 @@ my $root_node = $xml->parse_file($filename);
             my $scene_xpc = _get_xpc($scene);
 
             my $title = $scene_xpc->findnodes('xhtml:h1')->[0]->textContent();
-            io->file("./for-epub-xhtmls/scene-" . sprintf("%.4d", ($idx+1)) . ".xhtml")->utf8->print(<<"EOF");
+            io->file($target_dir . "/scene-" . sprintf("%.4d", ($idx+1)) . ".xhtml")->utf8->print(<<"EOF");
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE
     html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
@@ -85,3 +88,33 @@ EOF
         $idx++;
     });
 }
+
+my $gfx = 'Green-d10-dice.png';
+
+io->file('../graphics/' . $gfx) > io->file($target_dir . "/images/$gfx");
+
+io->file($target_dir . "/selina-mandrake.json")->utf8->print(
+    encode_json(
+        {
+            filename => 'selina-mandrake',
+            title => q/Selina Mandrake - The Slayer/,
+            authors =>
+            [
+                {
+                    name => "Shlomi Fish",
+                    sort => "Fish, Shlomi",
+                },
+            ],
+            cover => "images/$gfx",
+            rights => "Creative Commons Attribution ShareAlike Unported (CC-by-3.0)",
+            publisher => 'http://www.shlomifish.org/',
+            language => 'en-GB',
+            subjects => [ 'Fiction', 'Humour', ],
+            identifier =>
+            {
+                scheme => 'URL',
+                value => 'http://www.shlomifish.org/humour/Selina-Mandrake/',
+            }
+        }
+    )
+);
