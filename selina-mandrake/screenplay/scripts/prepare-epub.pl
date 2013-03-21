@@ -128,7 +128,7 @@ io->file($target_dir . '/' . $json_filename)->utf8->print(
             rights => "Creative Commons Attribution ShareAlike Unported (CC-by-3.0)",
             publisher => 'http://www.shlomifish.org/',
             language => 'en-GB',
-            subjects => [ 'Fiction', 'Humour', ],
+            subjects => [ 'FICTION/Horror', 'FICTION/Humorous', 'FICTION/Masups', ' FICTION/Science Fiction/General', 'HUMOR/Topic/Religion', 'HUMOR/Form/Parodies', 'Vampires', 'Buffy', ],
             identifier =>
             {
                 scheme => 'URL',
