@@ -48,13 +48,15 @@ my $root_node = $xml->parse_file($filename);
     {
         my ($orig_scene) = @_;
 
+        print "\n\n[$idx]<<<<< " . $orig_scene->toString() . ">>>>\n\n";
+        print "Foo ==" , (scalar($orig_scene->toString()) =~ /h3/g), "\n";
         my $scene = $orig_scene->cloneNode(1);
 
         {
             my $scene_xpc = _get_xpc($scene);
             foreach my $h_idx (2 .. 6)
             {
-                foreach my $h_tag ($scene_xpc->findnodes(qq{xhtml:h$h_idx}))
+                foreach my $h_tag ($scene_xpc->findnodes(qq{descendant::xhtml:h$h_idx}))
                 {
                     my $copy = $h_tag->cloneNode(1);
                     $copy->setNodeName('h' . ($h_idx-1));
@@ -68,7 +70,7 @@ my $root_node = $xml->parse_file($filename);
         {
             my $scene_xpc = _get_xpc($scene);
 
-            my $title = $scene_xpc->findnodes('xhtml:h1')->[0]->textContent();
+            my $title = $scene_xpc->findnodes('descendant::xhtml:h1')->[0]->textContent();
             io->file($target_dir . "/scene-" . sprintf("%.4d", ($idx+1)) . ".xhtml")->utf8->print(<<"EOF");
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE
