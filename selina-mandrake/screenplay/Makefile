@@ -26,6 +26,8 @@ SELINA_UPLOAD_TEMP_DEST = temp-selina-mandrake-P9n7ybv3wq2t
 
 all: $(DOCS_SCREENPLAY_XHTML) $(ENG_EPUB) $(ENG_XHTML) $(ENG_HTML_FOR_OOO)
 
+all: epub
+
 upload:
 	rsync -v --progress -a $(FILES) $${HOMEPAGE_SSH_PATH}/$(SELINA_UPLOAD_TEMP_DEST)/
 
@@ -76,6 +78,9 @@ openoffice: oohtml
 .PHONY: epub_ff
 
 epub: $(ENG_EPUB)
+
+$(ENG_EPUB): $(DOCS_SCREENPLAY_XHTML)
+	perl scripts/prepare-epub.pl
 
 epub_ff: epub
 	firefox $(ENG_EPUB)

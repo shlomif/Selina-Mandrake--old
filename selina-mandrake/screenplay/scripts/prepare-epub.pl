@@ -66,7 +66,7 @@ my $root_node = $xml->parse_file($filename);
             my $scene_xpc = _get_xpc($scene);
 
             my $title = $scene_xpc->findnodes('xhtml:h1')->[0]->textContent();
-            io->file("./for-epub-xhtmls/scene-" . ($idx+1) . ".xhtml")->utf8->print(<<"EOF");
+            io->file("./for-epub-xhtmls/scene-" . sprintf("%.4d", ($idx+1)) . ".xhtml")->utf8->print(<<"EOF");
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE
     html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
