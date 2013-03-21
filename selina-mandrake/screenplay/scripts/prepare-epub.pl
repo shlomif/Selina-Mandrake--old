@@ -10,6 +10,17 @@ use XML::LibXML::XPathContext;
 
 use Getopt::Long qw(GetOptions);
 
+my $xhtml_ns = "http://www.w3.org/1999/xhtml";
+
+sub _get_xpc
+{
+    my ($node) = @_;
+    my $xpc = XML::LibXML::XPathContext->new($node);
+    $xpc->registerNs("xhtml", $xhtml_ns);
+
+    return $xpc;
+}
+
 my $out_fn;
 
 GetOptions(
@@ -23,13 +34,8 @@ my $filename = shift(@ARGV)
 # Prepare the objects.
 my $xml = XML::LibXML->new;
 my $root_node = $xml->parse_file($filename);
-my $xpc = XML::LibXML::XPathContext->new($root_node);
-
-my $xhtml_ns = "http://www.w3.org/1999/xhtml";
-$xpc->registerNs("xhtml", $xhtml_ns);
-
 {
-    my $scenes_list = $xpc->findnodes(
+    my $scenes_list = _get_xpc($root_node)->findnodes(
         q{//xhtml:div[@class='screenplay']/xhtml:div[@class='scene']/xhtml:div[@class='scene' and xhtml:h2]}
     )
         or die "Cannot find top-level scenes list.";
@@ -39,24 +45,21 @@ $xpc->registerNs("xhtml", $xhtml_ns);
     {
         my ($orig_scene) = @_;
 
-        my $scene = $orig_scene->cloneNode();
+        my $scene = $orig_scene->cloneNode(1);
 
+        my $scene_xpc = _get_xpc($scene);
         foreach my $h_idx (2 .. 6)
         {
-            foreach my $h_tag ($scene->findnodes(qq{//xhtml:h$h_idx}))
+            foreach my $h_tag ($scene_xpc->findnodes(qq{//xhtml:h$h_idx}))
             {
-                my @nodes = $h_tag->getChildrenByTagName('*');
-                my $replacement = $scene->createElementNS($xhtml_ns, 'h'.($h_idx-1));
-                foreach my $n (@nodes)
-                {
-                    $replacement->appendChild(@n);
-                }
+                my $replacement = $h_tag->cloneNode(1);
+                $replacement->set
                 $h_tag->replaceNode($replacement);
             }
         }
 
-        my $title = $xpc->findnodes('xhtml:h1')->[0]->textContent();
-        io->file("./for-epub-xhtmls/scene-" . ($idx+1) . ".xhtml")->utf8->print(<<"EOF")
+        my $title = $scene_xpc->findnodes('xhtml:h1')->[0]->textContent();
+        io->file("./for-epub-xhtmls/scene-" . ($idx+1) . ".xhtml")->utf8->print(<<"EOF");
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE
     html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
