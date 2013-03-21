@@ -1439,7 +1439,7 @@ pleurez-vous? [ = “something is obviously the matter. Why are you crying?”]
 Milady Kate: D’accord. Comme je ne porte plus le deuil et que je
 semble heureuse, les autres femmes croient que j'ai tué mon mari.
 [ = “OK. The other women think I killed my husband because I'm now
-no longer grieving and seems happy.”]
+no longer grieving and because I seem happy.”]
 
 d’Artagnan: Sottises! On peut à la fois être triste et heureux pour
 des raisons différentes. [ = “nonsense. You can be sad and happy at the same
@@ -1768,12 +1768,12 @@ Selina: Heh, pleasant memories?
 Mosheh: Well: nostalgic ones, but not really pleasant ones. You see, the
 western Semitic people, primarily those who spoke the various Hebrew languages
 and Aramaic, have mostly converted to use the Alphabet, which appeared like a
-sloppy, hard to read, and a poor man’s writing system, which they often used
+sloppy, hard to read, and a poor man’s writing system. They often used it
 to write about anything including drinking, being happy and jolly,
 spreading vicious rumours, erotica, and even blatant pornography.
 
 +++: Some peoples used it as one of their technological and strategical
-advantages and made sure to pass many messages.
+advantages and made sure to pass many important messages.
 
 +++: On the other hand, Cuneiform was originally created for Sumerian, which
 many considered as a holy and mystical language that must be kept alive,
@@ -1799,9 +1799,9 @@ Selina: You too? [Selina looks at her.]
 
 Kate: Of course! See, my obsession with the Bible continued throughout my
 life, and later on I became a scholar: first as a married woman who just
-hanged around universities and learned things from the male professors
-and students, later on as someone who helped some professors with their
-research and eventually got credited, and as time progressed,
+frequented universities and learned things from the male professors
+and students; later on as someone who helped some professors with their
+research, and eventually got credited; and as time progressed,
 I got a B.A., and then a Ph.D., and am now a professor.
 
 Selina: Wow, that’s great.
@@ -1810,7 +1810,7 @@ Kate: And I studied Cuneiform and the memory is still fresh.
 
 Selina: Smashing! OK, so I gather you can help me get ready for the test?
 
-Aharon: We will be delighted. Vampires still have responsibility as normal
+Aharon: We will be delighted. Vampires still have responsibilies as normal
 human beings, and we always try to assist a fellow vampire.
 
 Selina: Great! OK, let's start. OK, show me some glyphs and ask me about
