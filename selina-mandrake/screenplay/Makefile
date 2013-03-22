@@ -26,9 +26,7 @@ SELINA_UPLOAD_TEMP_DEST = temp-selina-mandrake-P9n7ybv3wq2t
 
 ENG_EPUB = selina-mandrake.epub
 
-all: $(DOCS_SCREENPLAY_XHTML) $(ENG_EPUB) $(ENG_XHTML) $(ENG_HTML_FOR_OOO)
-
-all: epub
+all: $(DOCS_SCREENPLAY_XHTML) $(ENG_XHTML) $(ENG_HTML_FOR_OOO)
 
 upload:
 	rsync -v --progress -a $(FILES) $${__HOMEPAGE_REMOTE_PATH}/$(SELINA_UPLOAD_TEMP_DEST)/
