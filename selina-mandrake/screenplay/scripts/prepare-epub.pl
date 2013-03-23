@@ -90,6 +90,7 @@ my $root_node = $xml->parse_file($filename);
 <head>
 <title>$esc_title</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 $scene_string
@@ -105,7 +106,9 @@ my $gfx = 'Green-d10-dice.png';
 my $fron = 'fron-demon-illustration-small-indexed.png';
 io->file('../graphics/' . $gfx) > io->file($target_dir . "/images/$gfx");
 io->file('../graphics/fron/' . $fron) > io->file($target_dir . "/images/$fron");
-io->file( "$target_dir/style.css" )->utf8->print(<<'EOF');
+foreach my $basename ('style.css')
+{
+    io->file( "$target_dir/$basename" )->utf8->print(<<'EOF');
 body
 {
     direction: ltr;
@@ -115,6 +118,7 @@ body
     color: black;
 }
 EOF
+}
 
 my $epub_basename = 'selina-mandrake';
 my $json_filename = "$epub_basename.json";
