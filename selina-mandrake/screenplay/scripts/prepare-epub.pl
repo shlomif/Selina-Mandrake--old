@@ -116,11 +116,12 @@ body
 }
 EOF
 
-my $json_filename = 'selina-mandrake.json';
+my $epub_basename = 'selina-mandrake';
+my $json_filename = "$epub_basename.json";
 io->file($target_dir . '/' . $json_filename)->utf8->print(
     encode_json(
         {
-            filename => 'selina-mandrake',
+            filename => $epub_basename,
             title => q/Selina Mandrake - The Slayer/,
             authors =>
             [
@@ -177,7 +178,7 @@ io->file($target_dir . '/' . $json_filename)->utf8->print(
 
 my $orig_dir = io->curdir->absolute . '';
 
-my $epub_fn = 'selina-mandrake.epub';
+my $epub_fn = $epub_basename . ".epub";
 
 {
     chdir ($target_dir);
@@ -190,4 +191,4 @@ my $epub_fn = 'selina-mandrake.epub';
     chdir ($orig_dir);
 }
 
-io->file("$target_dir/$epub_fn") > io->file("$orig_dir/$epub_fn");
+io->file("$target_dir/$epub_fn") > io->file($out_fn);
