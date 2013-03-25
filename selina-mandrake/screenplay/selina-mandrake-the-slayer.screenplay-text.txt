@@ -873,7 +873,74 @@ Yaron about inviting his friends over.
 <s id="selinas-impressions-from-Israel" title="Selina’s impressions from Israel">
 
 [ Selina is standing in the living room holding a remote control to the
-television showing photos from her trip to Israel. ]
+television showing photos from her trip to Israel.
+
+The television is showing a photo of
+<a href="http://en.wikipedia.org/wiki/Beit_She%27an">the Beit She'an excavations</a>.
+
+]
+
+Selina: and this is Beit She'an, which is a huge excavation site, which I
+spent a lot of time there. I ended up touring along with them…
+
+[presses the button, and a photo of Selina wearing sunglasses along with
+a group of Israeli soldiers (without guns), both male and female, who are
+crowded and stand next to Selina.]
+
+Selina: yes, soldiers, and it may seem surprising to the uninitiated, but most
+of the soldiers in the Israeli streets don't carry guns, and there are plenty
+of civilians without guns too. This group was escorted by an armed escort, who
+was not actually a soldier.
+
++++: anyway, the soldier I spent the most time talking to was a military
+programmer, who wrote “boring dot-NET code” at work, but we found a common
+language talking about computers and software and Linux and stuff like that.
+
+</s>
+
+<s id="selina-slays-mephiqoleth" title="Selina slays Mephiqoleth">
+
+[Selina goes to the kitchen and opens the cupboard revealing Mephiqoleth.]
+
+Mephiqoleth: MAGEIA!
+
+Selina: hi! Thanks for the trip.
+
+Mephiqoleth: I SEE YOU HAVE SURVIVED THE AMBER.
+
+Selina: I did - yes.
+
+Mephiqoleth: DO YOU NOW BELIEVE HOW POWERFUL I AM.
+
+Selina: well… are you sure you teleported me to the exact location
+of <b>The Amber</b>, you know, the mystical centre of the universe?
+
+Mephiqoleth: THE VERY EXACT POSITION.
+
+Selina: not off by about a 100 kilometres.
+
+Mephiqoleth: NOT EVEN A QUARK’S DISPLACEMENT.
+
+Selina: well… then I am not convinced. I would expect The Amber to be
+something like Jerusalem’s
+<a href="http://en.wikipedia.org/wiki/Temple_Mount">Temple Mount</a> or
+the Middle land in China, or maybe the centre of mass of the
+universe — not some house in Northern Tel Aviv that no one heard about.
+
++++: So I am not convinced. But I brought you some cheesy souvenirs.
+
+[ Selina puts a small
+<a href="https://en.wikipedia.org/wiki/Tembel_hat">Tembel hat</a>
+on top of Mephiqoleth’s head and gives him a small shirt that reads “My
+slayer went on a trip to Israel and all I got was this stupid T-shirt.”]
+
+Selina: hope it fits. [She turns away.]
+
+Mephiqoleth: THE PROPHECIES OF THE CODEX HAVE COME TRUE: I HAVE BEEN
+SLAIN BY BUFFY MAGEIA, THE SLAYER. [He dissolves into air, leaving the
+hat and the shirt to fall into the cupboard.]
+
+Selina: hey, my name is Selina… oh.
 
 </s>
 
