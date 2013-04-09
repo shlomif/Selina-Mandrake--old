@@ -1,3 +1,48 @@
+* Computer scene with Mosheh.
+    - Selina is busy working on Hebrew wikimedia sites and has a browser
+    extension for translating to/from English.
+    - Mosheh pings her on Pidgin.
+    - She asks him if he's really the Jewish prophet.
+        - Mosheh: “I won't deny it.”
+        - Selina: Hah.
+        - Mosheh: There are quite a few other people called "Mosheh Ben-Amram"
+        in the Israeli phone directory.
+        - Selina: yes, I can imagine that.
+    - Qtsath vs. Qetsath
+        - http://en.wiktionary.org/wiki/%D7%A7%D7%A6%D7%AA
+        - "a little" in Hebrew and it's already a
+         http://en.wikipedia.org/wiki/Shibboleth
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=== Already integrated ideas ===
+================================
+
 * The Master
     - "Call me 'Karl'".
     - "I always thought the Master would be Karl the Great"
@@ -27,7 +72,8 @@ slayers."
     - "Selina: so you slew her?"
     - "The Guide: no, you did."
 
-* The Guide gives Selina a gift in a fancy chest. The first compartment contains
+* The Guide gives Selina a gift in a fancy chest. The first compartment
+contains
 a very stylised 1d10 die, and after opening the other compartment, she sees
 a plastic card saying "Vampire" on the side, with her ID photo, and saying:
 «Selina Mandrake ; "buffy" ; The Dispeller» on the other side.
@@ -54,6 +100,7 @@ a plastic card saying "Vampire" on the side, with her ID photo, and saying:
         - Meanwhile, the vampires take a stake, and stab themselves in their
         heart, causing all of them to evaporate into dust.
     - Selina turns off the music and goes to clean up the dust.
+
 * The plot plan:
     - The Two British Vampires
     - The demon walking in the park with the long neck.
